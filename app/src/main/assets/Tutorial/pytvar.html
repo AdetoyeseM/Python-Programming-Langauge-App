@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:color="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="Code::Blocks Exporter plugin" />
+<style type="text/css">
+<!--
+body { color: #000; background-color: #fff; }
+.style11 { color: #000000; background-color: #000; }
+.style64 { color: #C8C8C8; }
+.style72 { color: #C8C8C8; }
+.style75 { color: #C8C8C8; }
+.style1 { color: #A0A0A0; }
+.style23 { color: #A0A0A0; }
+.style65 { color: #A0A0A0; }
+.style87 { color: #A0A0A0; }
+.style2 { color: #000; }
+.style66 { color: #BEBEE6; }
+.style3 { color: #8080FF; font-weight: bold; }
+.style24 { color: #8080FF; font-weight: bold; }
+.style67 { color: #8080FF; font-weight: bold; }
+.style88 { color: #8080FF; font-weight: bold; }
+.style15 { color: #8080FF; font-weight: bold; }
+.style79 { color: #8080FF; font-weight: bold; }
+.style17 { color: #008080; }
+.style81 { color: #008080; }
+.style18 { color: #800000; }
+.style82 { color: #800000; }
+.style4 { color: #F000F0; }
+.style68 { color: #F0C8F0; }
+.style5 { color: #0000A0; font-weight: bold; }
+.style69 { color: #8787C8; font-weight: bold; }
+.style16 { color: #00A000; font-weight: bold; }
+.style80 { color: #9AC89A; font-weight: bold; }
+.style19 { color: #BE00BE; font-weight: bold; }
+.style83 { color: #BE89BE; font-weight: bold; }
+.style6 { color: #0000FF; }
+.style12 { color: #0000FF; }
+.style70 { color: #BEBEFF; }
+.style76 { color: #BEBEFF; }
+.style7 { color: #E0A000; }
+.style71 { color: #E0CE9F; }
+.style8 { color: #000000; }
+.style9 { color: #00A000; }
+.style73 { color: #84A084; }
+.style10 { color: #FF0000; }
+.style74 { color: #FFC8C8; }
+.style34 { color: #000000; background-color: #80FFFF; font-weight: bold; }
+.style35 { color: #FFFFFF; background-color: #FF0000; font-weight: bold; }
+.style50 { color: #404080; font-style: italic; }
+.style114 { color: #8585AC; font-style: italic; }
+--></style></head>
+<body>
+<hr>
+<h1 align=left style='text-align:center'><b><span style='font-size:15.0pt;
+line-height:105%;color:#3bafda'> Python Variables &amp; Operators
+</span> </b> </h1>
+<hr>
+<pre>
+
+<code>
+
+Variable is a name which is used to refer memory location. Variable also known as identifier and
+    used to hold value. In Python, we don't need to specify the type of variable because
+    Python is a type infer language and smart enough to get variable type.
+
+Variable names can be a group of both letters and digits, but they have to begin with a letter or an underscore.
+    It is recomended to use lowercase letters for variable name. Rahul and rahul both are two different variables.
+
+<b>Note </b> - Variable name should not be a keyword.
+
+    <hr>
+<h1 align=left style='text-align:left'><b><span style='font-size:15.0pt;
+line-height:105%;color:#3bafda'> Declaring Variable &amp; Assigning Values
+</span> </b> </h1>
+<hr>
+
+
+Python does not bound us to declare variable before using in the application.
+    It allows us to create variable at required time.
+
+We don't need to declare explicitly variable in Python.
+    When we assign any value to the variable that variable is declared automatically.
+
+The equal (=) operator is used to assign value to a variable.
+
+Eg:
+
+Output:
+
+>>>
+
+10
+
+ravi
+
+20000.67
+
+>>>
+
+Multiple Assignment
+
+Python allows us to assign a value to multiple variables in a single statement which is also known as multiple assignment.
+    We can apply multiple assignments in two ways either by assigning a single value to multiple variables or assigning multiple values to multiple variables.
+    Lets see given examples.
+
+1. Assigning single value to multiple variables
+
+Eg:
+
+x=y=z=50
+
+print iple
+
+print y
+
+print z
+
+Output:
+
+>>>
+
+50
+
+50
+
+50
+
+>>>
+
+2.Assigning multiple values to multiple variables:
+
+Eg:
+
+a,b,c=5,10,15
+
+print a
+
+print b
+
+print c
+
+Output:
+
+>>>
+
+5
+
+10
+
+15
+
+>>>
+
+
+The values will be assigned in the order in which variables appears.
+
+Basic Fundamentals:
+
+This section contains the basic fundamentals of Python like :
+
+i)Tokens and their types.
+
+ii) Comments
+
+
+a)Tokens:
+
+Tokens can be defined as a punctuator mark, reserved words and each individual word in a statement.
+Token is the smallest unit inside the given program.
+
+
+
+There are following tokens in Python:
+
+Keywords.
+Identifiers.
+Literals.
+Operators.
+
+<b> Tuples: </b>
+
+Tuple is another form of collection where different type of data can be stored.
+It is similar to list where data is separated by commas.
+    Only the difference is that list uses square bracket and tuple uses parenthesis.
+Tuples are enclosed in parenthesis and cannot be changed.
+
+Eg:
+
+>>> tuple=('rahul',100,60.4,'deepak')
+
+>>> tuple1=('sanjay',10)
+
+>>> tuple
+
+('rahul', 100, 60.4, 'deepak')
+
+>>> tuple[2:]
+
+(60.4, 'deepak')
+
+>>> tuple1[0]
+
+'sanjay'
+
+>>> tuple+tuple1
+
+('rahul', 100, 60.4, 'deepak', 'sanjay', 10)
+
+>>>
+
+<b> Dictionary: </b>
+
+Dictionary is a collection which works on a key-value pair.
+It works like an associated array where no two keys can be same.
+Dictionaries are enclosed by curly braces ({}) and values can be retrieved by square bracket([]).
+
+Eg:
+
+>>> dictionary={'name':'charlie','id':100,'dept':'it'}
+
+>>> dictionary
+
+{'dept': 'it', 'name': 'charlie', 'id': 100}
+
+>>> dictionary.keys()
+
+['dept', 'name', 'id']
+
+>>> dictionary.values()
+
+['it', 'charlie', 100]
+
+>>>
+
+ <hr>
+<h1 align=left style='text-align:center'><b><span style='font-size:15.0pt;
+line-height:105%;color:#3bafda'> Python Operators
+</span> </b> </h1>
+<hr>
+
+Operators are particular symbols that are used to perform operations on operands.
+    It returns result that can be used in application.
+
+Example
+
+1.    4 + 5 = 9
+
+Here 4 and 5 are Operands and (+) , (=) signs are the operators. This expression produces the output 9.
+
+    <b>
+Types of Operators
+    </b>
+Python supports the following operators
+
+Arithmetic Operators.
+Relational Operators.
+Assignment Operators.
+Logical Operators.
+Membership Operators.
+Identity Operators.
+Bitwise Operators.
+
+
+Arithmetic Operators
+
+The following table contains the arithmetic operators that are used to perform arithmetic operations.
+
+Operators  | Description
+
+// Perform Floor division(gives integer value after division)
+
++  To perform addition
+
+-  To perform subtraction
+
+*  To perform multiplication
+
+/  To perform division
+
+%  To return remainder after division(Modulus)
+
+** Perform exponent(raise to power)
+
+
+Example
+
+>>> 10+20
+
+30
+
+>>> 20-10
+
+10
+
+>>> 10*2
+
+20
+
+>>> 10/2
+
+5
+
+>>> 10%3
+
+1
+
+>>> 2**3
+
+8
+
+>>> 10//3
+
+3
+
+>>>
+
+
+Relational Operators
+
+The following table contains the relational operators that are used to check relations.
+
+
+Operators  |   Description
+
+
+
+
+<  Less than
+
+
+>  Greater than
+
+
+<= Less than or equal to
+
+
+>= Greater than or equal to
+
+
+== Equal to
+
+
+!= Not equal to
+
+
+<>  Not equal to(similar to !=)
+
+eg:
+
+>>> 10<20
+
+True
+
+>>> 10>20
+
+False
+
+>>> 10<=10
+
+True
+
+>>> 20>=15
+
+True
+
+>>> 5==6
+
+False
+
+>>> 5!=6
+
+True
+
+>>> 10<>2
+
+True
+
+>>>
+
+
+Assignment Operators
+
+The following table contains the assignment operators that are used to assign values to the variables.
+
+
+
+Operators  |  Description
+
+
+=  Assignment
+
+/= Divide and Assign
+
++= Add and assign
+
+-= Subtract and Assign
+
+*= Multiply and assign
+
+%= Modulus and assign
+
+**=Exponent and assign
+
+//=Floor division and assign
+
+Example
+
+1.    >>> c=10
+
+2.    >>> c
+
+3.    10
+
+4.    >>> c+=5
+
+5.    >>> c
+
+6.    15
+
+7.    >>> c-=5
+
+8.    >>> c
+
+9.    10
+
+10. >>> c*=2
+
+11. >>> c
+
+12. 20
+
+13. >>> c/=2
+
+14. >>> c
+
+15. 10
+
+16. >>> c%=3
+
+17. >>> c
+
+18. 1
+
+19. >>> c=5
+
+20. >>> c**=2
+
+21. >>> c
+
+22. 25
+
+23. >>> c//=2
+
+24. >>> c
+
+25. 12
+
+26. >>>
+
+
+
+Logical Operators
+
+The following table contains the arithmetic operators that are used to perform arithmetic operations.
+
+
+
+Operators |  Description
+
+and : Logical AND(When both conditions are true output will be true)
+
+or  : Logical OR (If any one condition is true output will be true)
+
+not : Logical NOT(Compliment the condition i.e., reverse)
+
+
+Example
+
+a=5>4 and 3>2
+
+print a
+
+b=5>4 or 3<2
+
+print b
+
+c=not(5>4)
+
+print c
+
+Output:
+
+1.    >>>
+
+2.    True
+
+3.    True
+
+4.    False
+
+5.    >>>
+
+
+
+Membership Operators
+
+The following table contains the membership operators.
+
+Operators  |  Description
+
+in: Returns true if a variable is in sequence of another variable, else false.
+
+not in: Returns true if a variable is not in sequence of another variable, else false.
+
+Example
+
+a=10
+
+b=20
+
+list=[10,20,30,40,50];
+
+if (a in list):
+
+    print "a is in given list"
+
+else:
+
+    print "a is not in given list"
+
+if(b not in list):
+
+    print "b is not given in list"
+
+else:
+
+    print "b is given in list"
+
+Output:
+
+>>>
+
+a is in given list
+
+b is given in list
+
+>>>
+
+
+
+Identity Operators
+
+The following table contains the identity operators.
+
+ Operators |  Description
+
+is: Returns true if identity of two operands are same, else false
+
+is not : Returns true if identity of two operands are not same, else false.
+
+Example
+
+a=20
+
+b=20
+
+if( a is b):
+
+    print  a,b have same identity
+
+else:
+
+    print a, b are different
+
+b=10
+
+if( a is not b):
+
+    print  a,b have different identity
+
+else:
+
+    print a,b have same identity
+
+Output
+
+>>>
+
+a,b have same identity
+
+a,b have different identity
+
+>>>
+
+
+
+
+
+
+
+</span>
+
+</code>
+
+<hr>
+
+</body>
+</html>
+
+</span>

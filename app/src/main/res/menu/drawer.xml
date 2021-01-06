@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/tutorial"
+            android:icon="@drawable/ic_computer_black_24dp"
+            android:title="Python Tutorial" />
+        <item
+            android:id="@+id/programs"
+            android:icon="@drawable/ic_code_black_24dp"
+            android:title="Python Programs" />
+        <item
+            android:id="@+id/ide"
+            android:icon="@drawable/ic_developer_mode_black_24dp"
+            android:title="Python IDE" />
+    </group>
+    <group android:checkableBehavior="single">
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/dev"
+                android:onClick="dev"
+                android:icon="@drawable/ic_person_outline_black_24dp"
+                android:title="About Developer" />
+
+            <item
+                android:id="@+id/nav_share"
+                android:onClick="share"
+                android:icon="@drawable/ic_send_black_24dp"
+                android:title="Share App" />
+            <item
+                android:id="@+id/exit"
+                android:onClick="exit"
+                android:iconTint="@color/colorGrape"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                android:title="Exit App" />
+        </menu>
+
+    </item>
+    </group>
+
+
+
+</menu>

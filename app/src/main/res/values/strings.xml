@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Python Project</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="recent"> Python Introduction</string>
+    <string name="ever">The student industrial training is the training programme
+        which forms part of Training is a key factor in changing expertise of a
+    The student industrial training is the training programme
+        which forms part of Training is a key factor in changing expertise of a
+    The student industrial training is the training programme
+        which forms part of Training is a key factor in changing expertise of a
+    The student industrial training is the training programme
+        which forms part of Training is a key factor in changing expertise of a
+    The student industrial training is the training programme
+        which forms part of Training is a key factor in changing expertise of a
+    The student industrial training is the training programme
+        which forms part of Training is a key factor in changing expertise of a
+    The student industrial training is the training programme
+        which forms part of Training is a key factor in changing expertise of a
+    The student industrial training is the training programme
+        which forms part of Training is a key factor in changing expertise of a
+    The student industrial training is the training programme
+        which forms part of Training is a key factor in changing expertise of a
+    The student industrial training is the training programme
+        which forms part of Training is a key factor in changing expertise of a</string>
+    <string name="qr">Quiz Result</string>
+    <string name="quiz">Quiz</string>
+    <string name="pro">Python Programs</string>
+
+    <string name="tut">Python Tutorials</string>
+    <string name="pyt">https://rextester.com/l/python3_online_compiler</string>
+    <string name="adetoyese_matthew_adegoke">ADETOYESE MATTHEW ADEGOKE</string>
+    <string name="_20150204014">20150204014</string>
+    <string name="python_quiz">Python Quiz</string>
+    <string name="communication">Communication</string>
+    <string name="help_amp_feedback">Help amp; Feedback</string>
+    <string name="help_ap_feedback"><![CDATA[Help & Feedback]]></string>
+    <string name="help_am_feedback"><![CDATA[Help & Feedback]]></string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="adetoyese_matthew_a">ADETOYESE MATTHEW A.</string>
+    <string name="python_project">Python Project</string>
+    <string name="python_ide">Python IDE</string>
+    <string name="python_programs">Python Programs</string>
+    <string name="python_tutorial">Python Tutorial</string>
+    <string name="home">Home</string>
+
+    <string name="aboutus">About Us</string>
+    <string name="about_developer">About Developer</string>
+    <string name="share_app">Share App</string>
+    <string name="exit">Exit</string>
+
+</resources>

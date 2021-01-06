@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:color="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="Code::Blocks Exporter plugin" />
+<style type="text/css">
+<!--
+body { color: #000; background-color: #fff; }
+.style11 { color: #000000; background-color: #000; }
+.style64 { color: #C8C8C8; }
+.style72 { color: #C8C8C8; }
+.style75 { color: #C8C8C8; }
+.style1 { color: #A0A0A0; }
+.style23 { color: #A0A0A0; }
+.style65 { color: #A0A0A0; }
+.style87 { color: #A0A0A0; }
+.style2 { color: #000; }
+.style66 { color: #BEBEE6; }
+.style3 { color: #8080FF; font-weight: bold; }
+.style24 { color: #8080FF; font-weight: bold; }
+.style67 { color: #8080FF; font-weight: bold; }
+.style88 { color: #8080FF; font-weight: bold; }
+.style15 { color: #8080FF; font-weight: bold; }
+.style79 { color: #8080FF; font-weight: bold; }
+.style17 { color: #008080; }
+.style81 { color: #008080; }
+.style18 { color: #800000; }
+.style82 { color: #800000; }
+.style4 { color: #F000F0; }
+.style68 { color: #F0C8F0; }
+.style5 { color: #0000A0; font-weight: bold; }
+.style69 { color: #8787C8; font-weight: bold; }
+.style16 { color: #00A000; font-weight: bold; }
+.style80 { color: #9AC89A; font-weight: bold; }
+.style19 { color: #BE00BE; font-weight: bold; }
+.style83 { color: #BE89BE; font-weight: bold; }
+.style6 { color: #0000FF; }
+.style12 { color: #0000FF; }
+.style70 { color: #BEBEFF; }
+.style76 { color: #BEBEFF; }
+.style7 { color: #E0A000; }
+.style71 { color: #E0CE9F; }
+.style8 { color: #000000; }
+.style9 { color: #00A000; }
+.style73 { color: #84A084; }
+.style10 { color: #FF0000; }
+.style74 { color: #FFC8C8; }
+.style34 { color: #000000; background-color: #80FFFF; font-weight: bold; }
+.style35 { color: #FFFFFF; background-color: #FF0000; font-weight: bold; }
+.style50 { color: #404080; font-style: italic; }
+.style114 { color: #8585AC; font-style: italic; }
+--></style></head>
+<body>
+<hr>
+<h1 align=left style='text-align:center'><b><span style='font-size:15.0pt;
+line-height:105%;color:#3bafda'>Python Tuple </span> </b> </h1>
+<hr>
+<pre>
+    <code>
+
+      A tuple is a sequence of immutable objects, therefore tuple cannot be changed.
+It can be used to collect different types of object.The objects are enclosed within parenthesis and separated by comma.
+
+Tuple is similar to list. Only the difference is that list is enclosed between square bracket,
+tuple between parenthesis and List has mutable objects whereas Tuple has immutable objects.
+
+
+Python Tuple Example
+
+>>> data=(10,20,'ram',56.8)
+
+>>> data2="a",10,20.9
+
+>>> data
+
+(10, 20, 'ram', 56.8)
+
+>>> data2
+
+('a', 10, 20.9)
+
+>>>
+
+<b>NOTE: </b> If Parenthesis is not given with a sequence, it is by default treated as Tuple.
+
+There can be an empty Tuple also which contains no object. Lets see an example of empty tuple.
+
+Python Empty Tuple Example
+
+tuple1=()
+
+Python Single Object Tuple Example
+
+For a single valued tuple, there must be a comma at the end of the value.
+
+Tuple1=(10,)
+
+
+
+Python Tuple of Tuples Example
+
+Tuples can also be nested, it means we can pass tuple as an element to create a new tuple.
+        See, the following example in which we have created a tuple that contains tuples an the object.
+
+
+tupl1='a','mahesh',10.56
+
+    tupl2=tupl1,(10,20,30)
+
+    print tupl1
+
+    print tupl2
+
+Output:
+
+>>>
+
+('a', 'mahesh', 10.56)
+
+(('a', 'mahesh', 10.56), (10, 20, 30))
+
+>>>
+
+
+<hr>
+<h1 align=left style='text-align:center'><b><span style='font-size:15.0pt;
+line-height:105%;color:#3bafda'>Accessing Tuples </span> </b> </h1>
+<hr>
+
+Accessing of tuple is pretty easy, we can access tuple in the same way as List.
+
+See, the following example.
+
+Accessing Tuple Example
+
+data1=(1,2,3,4)
+
+data2=('x','y','z')
+
+print data1[0]
+
+print data1[0:2]
+
+print data2[-3:-1]
+
+print data1[0:]
+
+print data2[:2]
+
+Output:
+
+>>>
+
+1
+
+(1, 2)
+
+('x', 'y')
+
+(1, 2, 3, 4)
+
+('x', 'y')
+
+>>>
+
+Elements in a Tuple
+
+Data=(1,2,3,4,5,10,19,17)
+
+Data[0]=1=Data[-8] ,
+
+Data[1]=2=Data[-7] ,
+
+Data[2]=3=Data[-6] ,
+
+Data[3]=4=Data[-5] ,
+
+Data[4]=5=Data[-4] ,
+
+Data[5]=10=Data[-3],
+
+Data[6]=19=Data[-2],
+
+Data[7]=17=Data[-1]
+
+ <hr>
+<h1 align=left style='text-align:center'><b><span style='font-size:15.0pt;
+line-height:105%;color:#3bafda'>Python Tuple Operations </span> </b> </h1>
+<hr>
+
+Python allows us to perform various operations on the tuple. Following are the common tuple operations.
+
+Adding Tuples Example
+
+Tuple can be added by using the concatenation operator(+) to join two tuples.
+
+data1=(1,2,3,4)
+
+data2=('x','y','z')
+
+data3=data1+data2
+
+print data1
+
+print data2
+
+print data3
+
+Output:
+
+>>>
+
+(1, 2, 3, 4)
+
+('x', 'y', 'z')
+
+(1, 2, 3, 4, 'x', 'y', 'z')
+
+>>>
+
+Note: The new sequence formed is a new Tuple.
+
+        <hr>
+<h1 align=left style='text-align:center'><b><span style='font-size:15.0pt;
+line-height:105%;color:#3bafda'>Replicating Tuple Examples</span> </b> </h1>
+<hr>
+
+Replicating means repeating. It can be performed by using '*' operator by a specific number of time.
+
+tuple1=(10,20,30);
+
+tuple2=(40,50,60);
+
+print tuple1*2
+
+print tuple2*3
+
+Output:
+
+>>>
+
+(10, 20, 30, 10, 20, 30)
+
+(40, 50, 60, 40, 50, 60, 40, 50, 60)
+
+>>>
+Python Tuple Slicing Example
+
+A subpart of a tuple can be retrieved on the basis of index. This subpart is known as tuple slice.
+
+data1=(1,2,4,5,7)
+
+print data1[0:2]
+
+print data1[4]
+
+print data1[:-1]
+
+print data1[-5:]
+
+print data1
+
+
+
+Output:
+
+>>>
+
+(1, 2)
+
+(1, 2, 4, 5)
+
+(1, 2, 4, 5, 7)
+
+(1, 2, 4, 5, 7)
+
+>>>
+
+
+Note: If the index provided in the Tuple slice is outside the list, then it raises an IndexError exception.
+
+Python Tuple other Operations
+
+Updating elements in a List
+
+Elements of the Tuple cannot be updated. This is due to the fact that Tuples are immutable.
+Whereas the Tuple can be used to form a new Tuple.
+
+Example
+
+data=(10,20,30)
+
+data[0]=100
+
+print data
+
+
+Output:
+
+>>>
+
+Traceback (most recent call last):
+
+         File "C:/Python27/t.py", line 2, in
+
+        data[0]=100
+
+TypeError: 'tuple' object does not
+
+support item assignment
+
+>>>
+
+
+Creating Tuple from Existing Example
+
+We can create a new tuple by assigning the existing tuple, see the following example.
+
+
+data1=(10,20,30)
+
+data2=(40,50,60)
+
+data3=data1+data2
+
+print data3
+
+Output:
+
+>>>
+
+(10, 20, 30, 40, 50, 60)
+
+>>>
+
+Python Tuple Deleting Example
+
+Deleting individual element from a tuple is not supported. However the whole of the tuple can be deleted using the del statement.
+
+
+data=(10,20,'rahul',40.6,'z')
+
+print data
+
+del data
+
+#will delete the tuple data
+
+print data
+
+#will show an error since tuple data is already deleted
+
+
+
+Output:
+
+>>>
+
+(10, 20, 'rahul', 40.6, 'z')
+
+Traceback (most recent call last):
+
+        File "C:/Python27/t.py", line 4, in
+
+        print data
+
+NameError: name 'data' is not defined
+
+>>>
+
+
+
+Functions of Tuple
+
+There are following in-built Type Functions
+
+Function  |  Description
+
+
+min(tuple) :  It returns the minimum value from a tuple.
+
+max(tuple) : It returns the maximum value from the tuple.
+
+len(tuple) : It gives the length of a tuple
+
+cmp(tuple1,tuple2) : It compares the two Tuples.
+
+tuple(sequence) : It converts the sequence into tuple.
+
+
+
+Python Tuple min(tuple) Method Example
+
+This method is used to get min value from the sequence of tuple.
+
+
+
+data=(10,20,'rahul',40.6,'z')
+
+print min(data)
+
+Output:
+
+>>>
+
+10
+
+>>>
+
+
+Python Tuple max(tuple) Method Example
+
+This method is used to get max value from the sequence of tuple.
+
+
+data=(10,20,'rahul',40.6,'z')
+
+print max(data)
+
+
+
+Output:
+
+>>>
+
+z
+
+>>>
+
+
+Python Tuple len(tuple) Method Example
+
+This method is used to get length of the tuple.
+
+
+
+data=(10,20,'rahul',40.6,'z')
+
+print len(data)
+
+
+Output:
+
+>>>
+
+5
+
+>>>
+
+
+Python Tuple cmp(tuple1,tuple2) Method Example
+
+This method is used to compare tuples.
+
+
+Explanation:If elements are of the same type, perform the comparison and return the result.
+If elements are different types, check whether they are numbers.
+
+If numbers, perform comparison.
+If either element is a number, then the other element is returned.
+Otherwise, types are sorted alphabetically .
+
+If we reached the end of one of the lists, the longer list is "larger." If both list are same it returns 0.
+
+data1=(10,20,'rahul',40.6,'z')
+
+data2=(20,30,'sachin',50.2)
+
+print cmp(data1,data2)
+
+print cmp(data2,data1)
+
+data3=(20,30,'sachin',50.2)
+
+print cmp(data2,data3)
+
+Output:
+
+>>>
+
+-1
+
+1
+
+0
+
+>>>
+
+5) tuple(sequence):
+
+Eg:
+
+dat=[10,20,30,40]
+
+data=tuple(dat)
+
+print data
+
+Output:
+
+>>>
+
+(10, 20, 30, 40)
+
+>>>
+
+
+
+<b>Why should we use Tuple? (Advantages of Tuple)
+</b>
+
+-Processing of Tuples are faster than Lists.
+
+-It makes the data safe as Tuples are immutable and hence cannot be changed.
+
+-Tuples are used for String formatting.
+
+
+
+        </span>
+</code>
+
+    </span>
+<hr>
+</pre>
+</body>
+</html>
+
+</span>

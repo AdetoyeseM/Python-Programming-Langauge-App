@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:color="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="Code::Blocks Exporter plugin" />
+<style type="text/css">
+<!--
+body { color: #000; background-color: #fff; }
+.style11 { color: #000000; background-color: #000; }
+.style64 { color: #C8C8C8; }
+.style72 { color: #C8C8C8; }
+.style75 { color: #C8C8C8; }
+.style1 { color: #A0A0A0; }
+.style23 { color: #A0A0A0; }
+.style65 { color: #A0A0A0; }
+.style87 { color: #A0A0A0; }
+.style2 { color: #000; }
+.style66 { color: #BEBEE6; }
+.style3 { color: #8080FF; font-weight: bold; }
+.style24 { color: #8080FF; font-weight: bold; }
+.style67 { color: #8080FF; font-weight: bold; }
+.style88 { color: #8080FF; font-weight: bold; }
+.style15 { color: #8080FF; font-weight: bold; }
+.style79 { color: #8080FF; font-weight: bold; }
+.style17 { color: #008080; }
+.style81 { color: #008080; }
+.style18 { color: #800000; }
+.style82 { color: #800000; }
+.style4 { color: #F000F0; }
+.style68 { color: #F0C8F0; }
+.style5 { color: #0000A0; font-weight: bold; }
+.style69 { color: #8787C8; font-weight: bold; }
+.style16 { color: #00A000; font-weight: bold; }
+.style80 { color: #9AC89A; font-weight: bold; }
+.style19 { color: #BE00BE; font-weight: bold; }
+.style83 { color: #BE89BE; font-weight: bold; }
+.style6 { color: #0000FF; }
+.style12 { color: #0000FF; }
+.style70 { color: #BEBEFF; }
+.style76 { color: #BEBEFF; }
+.style7 { color: #E0A000; }
+.style71 { color: #E0CE9F; }
+.style8 { color: #000000; }
+.style9 { color: #00A000; }
+.style73 { color: #84A084; }
+.style10 { color: #FF0000; }
+.style74 { color: #FFC8C8; }
+.style34 { color: #000000; background-color: #80FFFF; font-weight: bold; }
+.style35 { color: #FFFFFF; background-color: #FF0000; font-weight: bold; }
+.style50 { color: #404080; font-style: italic; }
+.style114 { color: #8585AC; font-style: italic; }
+--></style></head>
+<body>
+<hr>
+<h1 align=left style='text-align:center'><b><span style='font-size:15.0pt;
+line-height:105%;color:#3bafda'> Control of Flow </span> </b> </h1>
+<hr>
+<pre>
+    <code>
+
+<b> Python If Statements
+</b>
+    The Python if statement is a statement which is used to test specified condition.
+We can use if statement to perform conditional operations in our Python application.
+The if statement executes only when specified condition is true.
+We can pass any valid expression into the if parentheses.
+
+There are various types of if statements in Python.
+
+if statement
+if-else statement
+nested if statement
+
+
+Python If Statement Syntax
+
+if(condition): statements
+
+Python If Statement Example
+
+    a=10
+
+if a==10:
+
+        print  "Welcome to Tasued"
+Output:
+
+Welcome to Tasued
+        <br>
+<hr>
+ <h1 align=left style='text-align:left'><b><span style='font-size:15.0pt;
+line-height:105%;color:#3bafda'> Python If Else Statements
+ </span></b> </h1>
+        <hr>
+The If statement is used to test specified condition and if the condition is true, if block executes,
+     otherwise else block executes.The else statement executes when the if statement is false.
+
+
+Python If Else Syntax
+
+if(condition):  False statements
+
+    else:   True statements
+
+Example-
+
+year=2000
+
+if year%4==0:
+
+    print  "Year is Leap"
+
+else:
+
+    print "Year is not Leap"
+
+Output: Year is Leap
+
+<hr>
+ <h1 align=left style='text-align:left'><b><span style='font-size:15.0pt;
+line-height:105%;color:#3bafda'> Python Nested If Else Statement
+ </span> </b> </h1>
+<hr>
+In python, we can use nested If Else to check multiple conditions. Python provides elif keyword to make nested If statement.
+
+This statement is like executing a if statement inside a else statement.
+
+
+Python Nested If Else Syntax
+
+
+If statement: Body
+
+elif statement: Body
+
+else: Body
+
+
+Python Nested If Else Example
+
+a=10
+
+if a>=20:
+
+    print "Condition is True"
+
+else:
+
+    if a>=15:
+
+        print "Checking second value"
+
+    else:
+
+        print "All Conditions are false"
+
+Output:
+
+All Conditions are false.
+<hr>
+     <h1 align=left style='text-align:left'><b><span style='font-size:15.0pt;
+line-height:105%;color:#3bafda'> For Loop
+     </span> </b> </h1>
+<hr>
+
+Python for loop is used to iterate the elements of a collection in the order that they appear.
+         This collection can be a sequence(list or string).
+
+Python For Loop Syntax
+
+for <variable> in <sequence>:
+
+
+Explanation:
+
+Firstly, the first value will be assigned in the variable.
+Secondly all the statements in the body of the loop are executed with the same value.
+Thirdly, once step second is completed then variable is assigned the next value in the sequence and step second is repeated.
+Finally, it continues till all the values in the sequence are assigned in the variable and processed.
+
+
+
+Python For Loop Simple Example
+
+num=2
+
+for a in range (1,6):
+
+    print  num * a
+
+Output:
+
+2
+
+4
+
+6
+
+8
+
+10
+
+Python Example to Find Sum of 10 Numbers
+
+sum=0
+
+for n in range(1,11):
+
+    sum+=n
+
+print sum
+
+Output: 55
+
+<hr>
+<h1 align=left style='text-align:left'><b><span style='font-size:15.0pt;
+line-height:105%;color:#3bafda'> Python Nested For Loops
+</span> </b> </h1>
+<hr>
+
+        Loops defined within another Loop are called Nested Loops.
+    Nested loops are used to iterate matrix elements or to perform complex computation.
+
+When an outer loop contains an inner loop in its body it is called Nested Looping.
+
+Python Nested For Loop Syntax
+
+for  <expression>:
+
+        for <expression>:
+
+            Body
+
+
+Python Nested For Loop Example
+
+for i in range(1,6):
+
+    for j in range (1,i+1):
+
+        print i,
+
+    print
+
+Output:
+
+1.    >>>
+
+2.    1
+
+3.    2 2
+
+4.    3 3 3
+
+5.    4 4 4 4
+
+6.    5 5 5 5 5
+
+7.    >>>
+
+
+Explanation:
+
+For each value of Outer loop the whole inner loop is executed.
+
+For each value of inner loop the Body is executed each time.
+
+
+Python Nested Loop Example 2
+
+for i in range (1,6):
+
+    for j in range (5,i-1,-1):
+
+        print "*",
+
+    print
+
+Output:
+
+1.    >>>
+
+2.    * * * * *
+
+3.    * * * *
+
+4.    * * *
+
+5.    * *
+
+6.    *
+<hr>
+            <h1 align=left style='text-align:left'><b><span style='font-size:15.0pt;
+line-height:105%;color:#3bafda'> Python While Loop
+            </span> </b> </h1>
+<hr>
+In Python, while loop is used to execute number of statements or body till the specified condition is true.
+                Once the condition is false, the control will come out of the loop.
+
+
+Python While Loop Syntax
+
+while <expression>: Body
+
+
+Here, loop Body will execute till the expression passed is true. The Body may be a single statement or multiple statement.
+
+
+Python While Loop Example 1
+
+a=10
+
+while a>0:
+
+    print "Value of a is",a
+
+    a=a-2
+
+print "Loop is Completed"
+
+Output:
+
+>>>
+
+Value of a is 10
+
+Value of a is 8
+
+Value of a is 6
+
+Value of a is 4
+
+Value of a is 2
+
+Loop is Completed
+
+>>>
+
+Explanation:
+
+Firstly, the value in the variable is initialized.
+Secondly, the condition/expression in the while is evaluated.
+Consequently if condition is true, the control enters in the body and executes all the statements .
+If the condition/expression passed results in false then the control exists the body and straight away control goes to next instruction after body of while.
+Thirdly, in case condition was true having completed all the statements, the variable is incremented or decremented.
+                    Having changed the value of variable step second is followed. This process continues till the expression/condition becomes false.
+Finally Rest of code after body is executed.
+
+Python While Loop Example 2
+
+n=153
+
+sum=0
+
+while n>0:
+
+    r=n%10
+
+    sum+=r
+
+    n=n/10
+
+print sum
+
+Output:
+
+>>>
+
+9
+
+>>>
+                    <hr>
+<h1 align=left style='text-align:left'><b><span style='font-size:15.0pt;
+line-height:105%;color:#3bafda'> Python Break
+
+</span> </b> </h1>
+<hr>
+        Break statement is a jump statement which is used to transfer execution control.
+    It breaks the current execution and in case of inner loop, inner loop terminates immediately.
+    When break statement is applied the control points to the line following the body of the loop,
+    hence applying break statement makes the loop to terminate and controls goes to next line
+    pointing after loop body.
+
+
+Python Break Example 1
+
+for i in [1,2,3,4,5]:
+
+    if i==4:
+
+        print "Element found"
+
+        break
+
+    print i,
+
+Output:
+
+>>>
+
+1 2 3 Element found
+
+>>>
+
+
+
+Python Break Example 2
+
+for letter in 'Python3':
+
+    if letter == 'o':
+
+        break
+
+    print (letter)
+
+Output:
+
+1.    P
+
+2.    y
+
+3.    t
+
+4.    h
+
+<hr>
+    <h1 align=left style='text-align:left'><b><span style='font-size:15.0pt;
+line-height:105%;color:#3bafda'> Python Continue Statement
+
+    </span> </b> </h1>
+<hr>
+    Python Continue Statement is a jump statement which is used to skip execution of current iteration.
+  After skipping, loop continue with next iteration.
+  We can use continue statement with for as well as while loop in Python.
+
+Python Continue Statement Example
+
+a=0
+
+while a<=5:
+
+    a=a+1
+
+    if a%2==0:
+
+        continue
+
+    print a
+
+print "End of Loop"
+
+Output:
+
+>>>
+
+1
+
+3
+
+5
+
+End of Loop
+
+>>>
+<hr>
+<h1 align=left style='text-align:left'><b><span style='font-size:15.0pt;
+line-height:105%;color:#3bafda'> Python Pass
+
+</span> </b> </h1>
+<hr>
+In Python, pass keyword is used to execute nothing; it means, when we don't want to execute code,
+the pass can be used to execute empty. It is same as the name refers to.
+It just makes the control to pass by without executing any code. If we want to bypass any code pass statement can be used.
+
+Python Pass Syntax
+
+
+Python Pass Example
+
+for i in [1,2,3,4,5]:
+
+    if i==3:
+
+        pass
+
+        print "Pass when value is",i
+
+    print i,
+
+Output:
+
+>>>
+
+1 2 Pass when value is 3
+
+3 4 5
+
+>>>
+
+
+</span>
+</code>
+
+    </span>
+<hr>
+</pre>
+</body>
+</html>
+
+</span>

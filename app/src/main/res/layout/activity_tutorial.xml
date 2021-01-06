@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tutorial">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            android:fitsSystemWindows="true"
+            app:expandedTitleMarginStart="30dp"
+            app:expandedTitleMarginEnd="35dp"
+            android:background="@drawable/pro3"
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:title="Python Tutorial"
+                app:subtitle="Everything About Python Language"
+                app:layout_collapseMode="pin"
+                />
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e2e2dc"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/intro1"
+                    android:layout_width="360dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:onClick="intro"
+                   android:foreground="?android:selectableItemBackground"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:padding="3dp"
+                            android:src="@drawable/pythh" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Python Introduction"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/intro2"
+                    android:layout_width="360dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:onClick="var"
+                    android:foreground="?android:selectableItemBackground"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:padding="3dp"
+                            android:tint="@color/colorGrass"
+                            android:src="@drawable/ic_var_eq_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Python Variables &amp; Operators"
+                            android:textColor="@color/colorGrassDark"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/intro7"
+                    android:layout_width="360dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:onClick="flo"
+                    android:foreground="?android:selectableItemBackground"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:padding="3dp"
+                            android:tint="@color/colorBitterSweet"
+                            android:src="@drawable/ic_flow_hub_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Python Control Flow"
+                            android:textColor="@color/colorBitterSweet"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/intro4"
+                    android:layout_width="360dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:onClick="str"
+                    android:foreground="?android:selectableItemBackground"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:padding="3dp"
+                            android:src="@drawable/ic_sort_by_alpha_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Python Strings"
+                            android:textColor="#000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/intro5"
+                    android:layout_width="360dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:onClick="list"
+                    android:foreground="?android:selectableItemBackground"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:padding="3dp"
+                           android:tint="@color/colorMint"
+                            android:src="@drawable/ic_filter_list_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Python Lists"
+                            android:textColor="@color/colorMintDark"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/intro6"
+                    android:layout_width="360dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:onClick="tuple"
+                    android:foreground="?android:selectableItemBackground"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:padding="3dp"
+                            android:tint="@color/colorGrape"
+                            android:src="@drawable/ic_mouse_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Python Tuples"
+                            android:textColor="@color/colorgrapeDark"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/intro8"
+                    android:layout_width="360dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:selectableItemBackground"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:padding="3dp"
+                            android:tint="@color/colorBlueJeans"
+                            android:src="@drawable/ic_translate_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Python Dictionary"
+                            android:textColor="@color/colorBlueJeansDark"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/intro9"
+                    android:layout_width="360dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:selectableItemBackground"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:padding="3dp"
+                            android:tint="@color/colorBitterSweet"
+                            android:src="@drawable/ic_input_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Python Input &amp; Output"
+                            android:textColor="@color/colorBitterSweet"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/intro0"
+                    android:layout_width="360dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:selectableItemBackground"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:padding="3dp"
+                            android:src="@drawable/ic_functions_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Python Functions"
+                            android:textColor="#000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/intron"
+                    android:layout_width="360dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:onClick="mode"
+                    android:foreground="?android:selectableItemBackground"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:padding="3dp"
+                            android:tint="@color/colorGrass"
+                            android:src="@drawable/ic_more_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Python Modules"
+                            android:textColor="@color/colorGrassDark"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/intro01"
+                    android:layout_width="360dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:selectableItemBackground"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:padding="3dp"
+                            android:tint="@color/colorAqua"
+                            android:src="@drawable/ic_attach_file_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Exception Handling "
+                            android:textColor="@color/colorAquaDark"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+
+
+                </android.support.v7.widget.CardView>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/introb"
+                    android:layout_width="360dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:onClick="var"
+                    android:foreground="?android:selectableItemBackground"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:padding="3dp"
+                            android:tint="@color/colorMint"
+                            android:src="@drawable/ic_oop_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Python OOPs Concepts"
+                            android:textColor="@color/colorMintDark"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/introk"
+                    android:layout_width="360dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:selectableItemBackground"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:padding="3dp"
+                            android:tint="@color/colorBlueJeans"
+                            android:src="@drawable/ic_gamepad_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Python Constructors"
+                            android:textColor="@color/colorBlueJeansDark"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/intr"
+                    android:layout_width="360dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:onClick="str"
+                    android:foreground="?android:selectableItemBackground"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:padding="3dp"
+                            android:tint="#000"
+                            android:src="@drawable/ic_euro_symbol_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Python Inheritance"
+                            android:textColor="#000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/introp"
+                    android:layout_width="360dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:selectableItemBackground"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:padding="3dp"
+                            android:src="@drawable/ic_all_inclusive_black_24dp"
+                            android:tint="@color/colorGrape"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Socket Programming"
+                            android:textColor="@color/colorgrapeDark"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

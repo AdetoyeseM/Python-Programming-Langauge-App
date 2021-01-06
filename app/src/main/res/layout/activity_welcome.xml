@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".welcome"
+    android:background="@drawable/gradbg">
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_marginLeft="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="45dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <ImageView
+        android:id="@+id/welcm"
+        android:layout_width="230dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/pythh" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="380dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcm"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="76dp"
+        android:text="PYTHON PRORAMMING LANGUAGE"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="330dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <io.netopen.hotbitmapgg.library.view.RingProgressBar
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:id="@+id/prog1"
+        app:ringColor="@color/white"
+        android:layout_marginTop="450dp"
+        android:layout_centerHorizontal="true"
+        app:ringProgressColor="@color/colorPrimaryDark"
+        app:textColor="#000"
+        app:textSize="20sp"
+        app:max="100"
+        app:ringWidth="8dp"
+
+
+
+        />
+
+
+</RelativeLayout>

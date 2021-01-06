@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:color="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="Code::Blocks Exporter plugin" />
+<style type="text/css">
+<!--
+body { color: #000; background-color: #fff; }
+.style11 { color: #000000; background-color: #000; }
+.style64 { color: #C8C8C8; }
+.style72 { color: #C8C8C8; }
+.style75 { color: #C8C8C8; }
+.style1 { color: #A0A0A0; }
+.style23 { color: #A0A0A0; }
+.style65 { color: #A0A0A0; }
+.style87 { color: #A0A0A0; }
+.style2 { color: #000; }
+.style66 { color: #BEBEE6; }
+.style3 { color: #8080FF; font-weight: bold; }
+.style24 { color: #8080FF; font-weight: bold; }
+.style67 { color: #8080FF; font-weight: bold; }
+.style88 { color: #8080FF; font-weight: bold; }
+.style15 { color: #8080FF; font-weight: bold; }
+.style79 { color: #8080FF; font-weight: bold; }
+.style17 { color: #008080; }
+.style81 { color: #008080; }
+.style18 { color: #800000; }
+.style82 { color: #800000; }
+.style4 { color: #F000F0; }
+.style68 { color: #F0C8F0; }
+.style5 { color: #0000A0; font-weight: bold; }
+.style69 { color: #8787C8; font-weight: bold; }
+.style16 { color: #00A000; font-weight: bold; }
+.style80 { color: #9AC89A; font-weight: bold; }
+.style19 { color: #BE00BE; font-weight: bold; }
+.style83 { color: #BE89BE; font-weight: bold; }
+.style6 { color: #0000FF; }
+.style12 { color: #0000FF; }
+.style70 { color: #BEBEFF; }
+.style76 { color: #BEBEFF; }
+.style7 { color: #E0A000; }
+.style71 { color: #E0CE9F; }
+.style8 { color: #000000; }
+.style9 { color: #00A000; }
+.style73 { color: #84A084; }
+.style10 { color: #FF0000; }
+.style74 { color: #FFC8C8; }
+.style34 { color: #000000; background-color: #80FFFF; font-weight: bold; }
+.style35 { color: #FFFFFF; background-color: #FF0000; font-weight: bold; }
+.style50 { color: #404080; font-style: italic; }
+.style114 { color: #8585AC; font-style: italic; }
+--></style></head>
+<body>
+<hr>
+<h1 align=left style='text-align:center'><b><span style='font-size:15.0pt;
+line-height:105%;color:#3bafda'>Python Strings </span> </b> </h1>
+<hr>
+<pre>
+    <code>
+    Python string is a built-in type text sequence. It is used to handle textual data in python.
+Python Strings are immutable sequences of Unicode points. Creating Strings are simplest and easy to use in Python.
+We can simply create Python String by enclosing a text in single as well as double quotes.
+Python treat both single and double quotes statements same.
+
+Accessing Python Strings
+
+In Python, Strings are stored as individual characters in a contiguous memory location.
+The benefit of using String is that it can be accessed from both the directions (forward and backward).
+Both forward as well as backward indexing are provided using Strings in Python.
+Forward indexing starts with 0,1,2,3,....
+Backward indexing starts with -1,-2,-3,-4,....
+
+
+Example
+
+
+str[0]='P'=str[-6] ,
+
+str[1]='Y' = str[-5]  ,
+
+str[2] = 'T' = str[-4]  ,
+
+str[3] = 'H' = str[-3]
+
+str[4] = 'O' = str[-2]  ,
+
+str[5] = 'N' = str[-1].
+
+
+Python String Example
+
+Here, we are creating a simple program to retrieve String in reverse as well as normal form.
+
+
+name="Adept"
+
+length=len(name)
+
+i=0
+
+for n in range(-1,(-length-1),-1):
+
+    print name[i],"\t",name[n]
+
+    i+=1
+
+Output:
+
+>>>
+
+A       t
+
+d       p
+
+e       e
+
+p       d
+
+t       A
+
+>>>
+
+<hr>
+<h1 align=left style='text-align:center'><b><span style='font-size:15.0pt;
+line-height:105%;color:#3bafda'>Python Strings Operators </span> </b> </h1>
+<hr>
+
+
+To perform operation on string, Python provides basically 3 types of Operators that are given below.
+
+
+
+-Basic Operators.
+-Membership Operators.
+-Relational Operators.
+
+
+Python String Basic Operators
+
+There are two types of basic operators in String "+" and "*".
+
+
+
+String Concatenation Operator (+)
+
+The concatenation operator (+) concatenates two Strings and creates a new String.
+
+
+Python String Concatenation Example
+
+>>> "Ade" + "goke"
+
+Output:
+
+'Adegoke'
+
+>>>
+
+
+Expression
+
+Output
+
+
+'10' + '20' :'1020'
+
+"s" + "007" :'s007'
+
+'abcd123' + 'xyz4' :'abcd123xyz4'
+
+
+NOTE: Both the operands passed for concatenation must be of same type, else it will show an error.
+
+
+Eg:
+
+'abc' + 3
+
+>>>
+
+output:
+
+Traceback (most recent call last):
+
+  File "", line 1, in
+
+    'abc' + 3
+
+TypeError: cannot concatenate 'str' and 'int' objects
+
+>>>
+
+
+Python String Replication Operator (*)
+
+Replication operator uses two parameters for operation, One is the integer value and the other one is the String argument.
+
+The Replication operator is used to repeat a string number of times.
+        The string will be repeated the number of times which is given by the integer value.
+
+
+
+Python String Replication Example
+
+>>> 5*"Matthew"
+
+Output:
+
+'MatthewMatthewMatthewMatthewMatthew'
+
+
+Expression
+
+Output
+
+
+"soono"*2 :'soonosoono'
+
+
+3*'1': '111'
+
+
+'$'*5 :'$$$$$'
+
+
+
+NOTE: We can use Replication operator in any way i.e., int * string or string * int.
+        Both the parameters passed cannot be of same type.
+
+
+<hr>
+<h1 align=left style='text-align:center'><b><span style='font-size:15.0pt;
+line-height:105%;color:#3bafda'>Python Strings Membership Operators </span> </b> </h1>
+<hr>
+
+Membership Operators are already discussed in the Operators section. Let see with context of String.
+
+There are two types of Membership operators
+
+1) in:"in" operator returns true if a character or the entire substring is present in the specified string, otherwise false.
+
+2) not in:"not in" operator returns true if a character or entire substring does not exist in the specified string, otherwise false.
+
+Python String membership operator Example
+
+
+
+>>> str1="javatpoint"
+
+>>> str2='sssit'
+
+>>> str3="seomount"
+
+>>> str4='java'
+
+>>> st5="it"
+
+>>> str6="seo"
+
+>>> str4 in str1
+
+True
+
+>>> str5 in str2
+
+>>> st5 in str2
+
+True
+
+>>> str6 in str3
+
+True
+
+>>> str4 not in str1
+False
+
+>>> str1 not in str4
+
+True
+
+
+<hr>
+<h1 align=left style='text-align:center'><b><span style='font-size:15.0pt;
+line-height:105%;color:#3bafda'>Python Relational Operators </span> </b> </h1>
+<hr>
+
+All the comparison (relational) operators i.e., (<,><=,>=,==,!=,<>) are also applicable for strings.
+        The Strings are compared based on the ASCII value or Unicode(i.e., dictionary Order).
+
+
+
+Python Relational Operators Example
+
+>>> "ADE"=="ADE"
+
+True
+
+>>> "OLA">='O;A'
+
+True
+
+>>> "F"<>"f"
+
+True
+
+Explanation:
+
+The ASCII value of a is 97, b is 98, c is 99 and so on.
+        The ASCII value of A is 65,B is 66,C is 67 and so on.
+        The comparison between strings are done on the basis on ASCII value.
+
+Python String Slice Notation
+
+Python String slice can be defined as a substring which is the part of the string.
+        Therefore further substring can be obtained from a string.
+
+
+
+There can be many forms to slice a string, as string can be accessed or indexed from both the direction
+        and hence string can also be sliced from both the directions.
+
+
+Python String Slice Syntax
+
+<string_name>[startIndex:endIndex],
+
+<string_name>[:endIndex],
+
+<string_name>[startIndex:]
+
+
+
+Python String Slice Example 1
+
+>>> str="Nikhil"
+
+>>> str[0:6]
+
+'Nikhil'
+
+>>> str[0:3]
+
+'Nik'
+
+>>> str[2:5]
+
+'khi'
+
+>>> str[:6]
+
+'Nikhil'
+
+>>> str[3:]
+
+'hil'
+
+
+Note: startIndex in String slice is inclusive whereas endIndex is exclusive.
+
+String slice can also be used with Concatenation operator to get whole string.
+
+Python String Slice Example 2
+
+>>> str="Mahesh"
+
+>>> str[:6]+str[6:]
+
+'Mahesh'
+
+//here 6 is the length of the string.
+
+<hr>
+<h1 align=left style='text-align:center'><b><span style='font-size:15.0pt;
+line-height:105%;color:#3bafda'>Python Strings Functions and Methods </span> </b> </h1>
+<hr>
+
+
+Python provides various predefined or built-in string functions. They are as follows:
+
+
+
+capitalize() :It capitalizes the first character of the String.
+
+
+count(string,begin,end): It Counts number of times substring occurs in a String between begin and end index.
+
+
+endswith(suffix ,begin=0,end=n): It returns a Boolean value if the string terminates with given suffix between begin and end.
+
+
+find(substring ,beginIndex, endIndex) : It returns the index value of the string where substring is found between begin index and end index.
+
+
+index(subsring, beginIndex, endIndex) : It throws an exception if string is not found and works same as find() method.
+
+
+isalnum(): It returns True if characters in the string are alphanumeric i.e., alphabets or numbers and there is at least 1 character. Otherwise it returns False.
+
+
+isalpha() : It returns True when all the characters are alphabets and there is at least one character, otherwise False.
+
+
+isdigit() : It returns True if all the characters are digit and there is at least one character, otherwise False.
+
+
+islower() : It returns True if the characters of a string are in lower case, otherwise False.
+
+
+isupper() : It returns False if characters of a string are in Upper case, otherwise False.
+
+
+isspace() : It returns True if the characters of a string are whitespace, otherwise false.
+
+
+len(string) : It returns the length of a string.
+
+
+lower() : It converts all the characters of a string to Lower case.
+
+
+upper() : It converts all the characters of a string to Upper Case.
+
+
+startswith(str ,begin=0,end=n) : It returns a Boolean value if the string starts with given str between begin and end.
+
+
+swapcase() : It inverts case of all characters in a string.
+
+
+lstrip() : It removes all leading whitespace of a string and can also be used to remove particular character from leading.
+
+
+rstrip(): It removes all trailing whitespace of a string and can also be used to remove particular character from trailing.
+
+
+
+Python String capitalize() Method Example
+
+This method capitalizes the first character of the String.
+
+
+
+1.    >>> 'abc'.capitalize()
+
+Output: 'Abc'
+
+
+Python String count(string) Method Example
+
+This method counts number of times substring occurs in a String between begin and end index.
+
+
+
+msg = "welcome to sssit";
+
+substr1 = "o";
+
+print  msg.count(substr1, 4, 16)
+
+substr2 = "t";
+
+print  msg.count(substr2)
+
+Output:
+
+>>>
+
+2
+
+2
+
+>>>
+
+Python String endswith(string) Method Example
+
+This method returns a Boolean value if the string terminates with given suffix between begin and end.
+
+
+
+string1="Welcome to SSSIT";
+
+substring1="SSSIT";
+
+substring2="to";
+
+substring3="of";
+
+print string1.endswith(substring1);
+
+print string1.endswith(substring2,2,16);
+
+print string1.endswith(substring3,2,19);
+
+print string1.endswith(substring3);
+
+Output:
+
+>>>
+
+True
+
+False
+
+False
+
+False
+
+>>>
+
+Python String find(string) Method Example
+
+This method returns the index value of the string where substring is found between begin index and end index.
+
+
+
+str="Welcome to SSSIT";
+
+substr1="come";
+
+substr2="to";
+
+print str.find(substr1);
+
+print str.find(substr2);
+
+print str.find(substr1,3,10);
+
+print str.find(substr2,19);
+
+
+
+Output:
+
+>>>
+
+3
+
+8
+
+3
+
+-1
+
+>>>
+
+
+
+Python String index() Method Example
+
+This method returns the index value of the string where substring is found between begin index and end index.
+
+
+
+str="Welcome to world of SSSIT";
+
+substr1="come";
+
+substr2="of";
+
+print str.index(substr1);
+
+print str.index(substr2);
+
+print str.index(substr1,3,10);
+
+print str.index(substr2,19);
+
+
+
+Output:
+
+>>>
+
+3
+
+17
+
+3
+
+Traceback (most recent call last):
+
+  File "C:/Python27/fin.py", line 7, in
+
+    print str.index(substr2,19);
+
+ValueError: substring not found
+
+>>>
+
+
+
+Python String isalnum() Method Example
+
+This method returns True if characters in the string are alphanumeric i.e., alphabets or numbers and there is at least 1 character. Otherwise it returns False.
+
+
+
+str="Welcome to sssit";
+
+    print str.isalnum();
+
+str1="Python47";
+
+print str1.isalnum();
+
+
+
+Output:
+
+>>>
+
+False
+
+True
+
+>>>
+
+
+
+Python String isalpha() Method Example
+
+It returns True when all the characters are alphabets and there is at least one character, otherwise False.
+
+
+
+string1="HelloPython";
+
+ # Even space is not allowed
+
+print string1.isalpha();
+
+string2="This is Python2.7.4"
+
+print string2.isalpha();
+
+
+
+Output:
+
+>>>
+
+True
+
+False
+
+>>>
+
+
+
+Python String isdigit() Method Example
+
+This method returns True if all the characters are digit and there is at least one character, otherwise False.
+
+
+
+string1="HelloPython";
+
+print string1.isdigit();
+
+string2="98564738"
+
+print string2.isdigit();
+
+
+
+Output:
+
+>>>
+
+False
+
+True
+
+>>>
+
+
+Python String islower() Method Example
+
+This method returns True if the characters of a string are in lower case, otherwise False.
+
+
+string1="Hello Python";
+
+print string1.islower();
+
+string2="welcome to "
+
+print string2.islower();
+
+
+
+Output:
+
+>>>
+
+False
+
+True
+
+>>>
+
+
+
+Python String isupper() Method Example
+
+This method returns False if characters of a string are in Upper case, otherwise False.
+
+
+
+string1="Hello Python";
+
+print string1.isupper();
+
+string2="WELCOME TO"
+
+print string2.isupper();
+
+
+
+Output:
+
+>>>
+
+False
+
+True
+
+>>>
+
+
+
+Python String isspace() Method Example
+
+This method returns True if the characters of a string are whitespace, otherwise false.
+
+
+
+string1="    ";
+
+print string1.isspace();
+
+string2="WELCOME TO WORLD OF PYT"
+
+print string2.isspace();
+
+
+
+Output:
+
+>>>
+
+True
+
+False
+
+>>>
+
+
+
+Python String len(string) Method Example
+
+This method returns the length of a string.
+
+
+
+string1="    ";
+
+print len(string1);
+
+string2="WELCOME TO SSSIT"
+
+print len(string2);
+
+
+
+Output:
+
+>>>
+
+4
+
+16
+
+>>>
+
+
+
+Python String lower() Method Example
+
+It converts all the characters of a string to Lower case.
+
+
+
+string1="Hello Python";
+
+print string1.lower();
+
+string2="WELCOME TO SSSIT"
+
+print string2.lower();
+
+
+
+Output:
+
+>>>
+
+hello python
+
+welcome to sssit
+
+>>>
+
+
+
+Python String upper() Method Example
+
+This method converts all the characters of a string to upper case.
+
+
+
+string1="Hello Python";
+
+print string1.upper();
+
+string2="welcome to SSSIT"
+
+print string2.upper();
+
+
+
+Output:
+
+>>>
+
+HELLO PYTHON
+
+WELCOME TO SSSIT
+
+>>>
+
+
+
+Python String startswith(string) Method Example
+
+This method returns a Boolean value if the string starts with given str between begin and end.
+
+
+
+string1="Hello Python";
+
+print string1.startswith('Hello');
+
+string2="welcome to SSSIT"
+
+print string2.startswith('come',3,7);
+
+
+
+Output:
+
+>>>
+
+True
+
+True
+
+>>>
+
+
+
+Python String swapcase() Method Example
+
+It inverts case of all characters in a string.
+
+
+
+string1="Hello Python";
+
+print string1.swapcase();
+
+string2="welcome to SSSIT"
+
+print string2.swapcase();
+
+
+
+Output:
+
+>>>
+
+hELLO pYTHON
+
+WELCOME TO sssit
+
+>>>
+
+
+
+Python String lstrip() Method Example
+
+It removes all leading whitespace of a string and can also be used to remove particular character from leading.
+
+
+
+string1="    Hello Python";
+
+print string1.lstrip();
+
+string2="@@@@@@@@welcome to SSSIT"
+
+print string2.lstrip('@');
+
+
+
+Output:
+
+>>>
+
+Hello Python
+
+welcome to world to SSSIT
+
+>>>
+
+
+
+Python String rstrip() Method Example
+
+It removes all trailing whitespace of a string and can also be used to remove particular character from trailing.
+
+
+
+string1="    Hello Python     ";
+
+print string1.rstrip();
+
+string2="@welcome to SSSIT!!!"
+
+print string2.rstrip('!');
+
+
+
+Output:
+
+>>>
+
+          Hello Python
+
+@welcome to SSSIT
+
+>>>
+
+
+
+    </span>
+</code>
+
+    </span>
+<hr>
+</pre>
+</body>
+</html>
+
+</span>

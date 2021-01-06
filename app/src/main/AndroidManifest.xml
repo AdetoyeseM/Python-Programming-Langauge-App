@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.pythonproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/pythh"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/pythh"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".tuple"
+            android:parentActivityName=".Tutorial"></activity>
+        <activity android:name=".list"
+            android:parentActivityName=".Tutorial"></activity>
+        <activity android:name=".string"
+            android:parentActivityName=".Tutorial"></activity>
+        <activity android:name=".about"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".flow"
+            android:parentActivityName=".Tutorial"> </activity>
+        <activity android:name=".vintent"
+            android:parentActivityName=".Tutorial"></activity>
+        <activity android:name=".pintro"
+            android:parentActivityName=".Tutorial" > </activity>
+        <activity android:name=".prog2"
+            android:parentActivityName=".programs"> </activity>
+        <activity android:name=".prog1"
+            android:parentActivityName=".programs"/>
+        <activity android:name=".programs"
+            android:parentActivityName=".MainActivity">  </activity>
+        <activity android:name=".welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewAnswer"
+            android:parentActivityName=".QuizActivity"></activity>
+        <activity android:name=".QuizResult"
+            android:parentActivityName=".QuizActivity"> </activity>
+        <activity android:name=".theQuiz"
+            android:parentActivityName=".QuizActivity"/>
+        <activity android:name=".QuizActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Tutorial"
+            android:parentActivityName=".MainActivity"
+         > </activity>
+        <activity android:name=".Ide"
+            android:parentActivityName=".MainActivity" > </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
